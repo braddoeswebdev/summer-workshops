@@ -1,0 +1,17 @@
+<% unless current_page.data.toc %>
+<table class="table nav">
+  <tr>
+    <td>
+      <% if sitemap.where(:series => current_page.data.series, :number.lt => current_page.data.number).all.count > 0 %>
+        <%= link_to i('angle-double-left') + "Previous " , sitemap.where(:series => current_page.data.series, :number => current_page.data.number - 1).first %>
+      <% end %>
+      </td>
+    <td><%= link_to "Up " + i('angle-double-up'), sitemap.where(:series => current_page.data.series, :toc => true).first %></td>
+    <td>
+      <% if sitemap.where(:series => current_page.data.series, :number.gt => current_page.data.number).all.count > 0 %>
+        <%= link_to "Next " + i('angle-double-right'), sitemap.where(:series => current_page.data.series, :number => current_page.data.number + 1).first %>
+      <% end %>
+    </td>
+  </tr>
+</table>
+<% end %>

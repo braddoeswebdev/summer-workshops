@@ -1,0 +1,10 @@
+<table class="table table-striped toc">
+<% sitemap.find_resource_by_path(url).children.each do |p| %>
+<tr>
+  <td class="number"><%= link_to p.data['number'], p.url %></td>
+  <td class="icon"><%= link_to i(p.data['icon']), p.url %> </td>
+  <td class="title"><%= link_to p.data['title'], p.url %></td>
+  <td class="desc"><%= p.data['desc'] %></td>
+</tr>
+<% end %>
+</table>

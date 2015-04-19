@@ -22,10 +22,6 @@ Next, get a pen and paper and sketch out roughly how you want your site to look.
 ## Choosing your Assets
 At this point, it's good to start putting together the content & assets that will eventually appear on your webpage.  *Content* is the actual information that will be displayed on your page.  *Assets* are all the other stuff - images, colors, fonts, and the other pieces that help your page look good.
 
-### Content
-
-You should have come up with a title and some text already.  Hang on to those.
-
 ### Color Theme
 
 Head over to [paletton.com](http://paletton.com/) to pick out a color scheme.  Paletton will help you pick colors that will look good together.  You'll need to copy down the color codes for any colors you want to use, which you can get by hovering your mouse over a color on the right side of the screen.

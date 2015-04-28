@@ -108,3 +108,16 @@ puts 98 + (59872 / (13*8)) * -52
 5
 -29802
 ~~~~
+
+
+<div class="panel panel-primary">
+<div class="panel-heading">Before you continue, show this to one of the adult-y people</div>
+  <div class="panel-body" markdown="1">
+
+Write a program that tells you:
+
+- How many hours are in a year?
+- How many minutes are in a decade?
+- If you have 7 50 minute classes a day for 180 days, how many hours do you spend in school every year?
+
+</div>

@@ -370,3 +370,11 @@ false
 ~~~~
 
 Not bad, huh? We were able to add more questions (and adding questions is easy now), but our program is still quite a bit shorter! It's a big improvement — a lazy programmer's dream.
+
+<div class="panel panel-primary">
+<div class="panel-heading">Before you continue, show this to one of the adult-y people</div>
+  <div class="panel-body" markdown="1">
+
+Write add, subtract, multiply, and divide methods that each take 2 numbers and return the result of doing the math.  Then use your methods to write a simple calculator.  Ask for 2 numbers and an operation to perform, then print out the result.
+
+</div>

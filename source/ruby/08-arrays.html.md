@@ -165,3 +165,11 @@ whiskers on kittens
 raindrops on roses
 1
 ~~~~
+
+<div class="panel panel-primary">
+<div class="panel-heading">Before you continue, show this to one of the adult-y people</div>
+  <div class="panel-body" markdown="1">
+
+Write that program that reads in a list of words & then spits them back out in alphabetical order.  Here's a hint: arrays have a sort method.
+
+</div>

@@ -169,3 +169,21 @@ up\down
 Since the backslash does not escape a 'd', but does escape itself, those last two strings are identical. They don't look the same in the code, but in your computer they really are the same.
 
 If you have any other questions, just keep reading! I couldn't answer every question on this page, after all.
+
+<div class="panel panel-primary">
+<div class="panel-heading">Before you continue, show this to one of the adult-y people</div>
+  <div class="panel-body" markdown="1">
+
+Write a program that prints this out:
+
+~~~~ plain
+_____         _
+|  __ \       | |
+| |__) |_   _ | |__   _   _
+|  _  /| | | || '_ \ | | | |
+| | \ \| |_| || |_) || |_| |
+|_|  \_\\____||____/  \__  |
+                      __/ /
+                     |___/
+~~~~
+</div>

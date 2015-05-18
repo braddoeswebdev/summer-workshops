@@ -33,7 +33,7 @@ Note: On Windows computers, you might have trouble seeing the file names, becaus
 To make files talk to one another, you have to provide a file path between them — basically a route so one file knows where another one is. To demonstrate this, we will insert a little bit of HTML into our `index.html` file, and make it display the image you chose in the article "What will your website look like?"
 
 - Copy the image you chose earlier into your images folder.
-- Open up your index.html file, and insert the following code into the file exactly as shown. Don't worry about what it all means for now — we'll look at the structures in more detail later in the series.
+- Open up your index.html file, and insert the following code into the file exactly as shown. Don't worry about what it all means for now — we'll look at the structures in more detail in the next section.
 
 ~~~~ html
 <!DOCTYPE html>
@@ -63,3 +63,11 @@ To make files talk to one another, you have to provide a file path between them 
 For now, this is about all you need to know.
 
 Note: The Windows file system tends to use backslashes, not forward slashes, e.g. C:\windows. This doesn't matter — even if you are developing your web site on Windows, you should still use forward slashes in your code.
+
+<div class="panel panel-primary">
+<div class="panel-heading">Before you continue, show this to one of the adult-y people</div>
+  <div class="panel-body" markdown="1">
+
+Show us that your folders & files are all set up correctly.
+
+</div>

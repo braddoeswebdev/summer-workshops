@@ -168,3 +168,11 @@ Pleased to meet you, Chris.  :)
 ~~~~
 
 Much better! Notice that since name is pointing to  gets.chomp, we don't ever have to say  name.chomp;  name was already chomped.
+
+<div class="panel panel-primary">
+<div class="panel-heading">Before you continue, show this to one of the adult-y people</div>
+  <div class="panel-body" markdown="1">
+
+Write a program that asks for a person's favorite number.  Have your program add one to their number, then brag that it's number is bigger and better.
+
+</div>

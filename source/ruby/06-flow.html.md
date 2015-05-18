@@ -331,3 +331,15 @@ false
 ~~~~
 
 The only one of these which might trick you is  or. In English, we often use "or" to mean "one or the other, but not both." For example, your mom might say, "For dessert, you can have pie or cake." She did not mean you could have them both! A computer, on the other hand, uses or to mean "one or the other, or both." (Another way of saying it is, "at least one of these is true.") This is why computers are more fun than moms.
+
+<div class="panel panel-primary">
+<div class="panel-heading">Before you continue, show this to one of the adult-y people</div>
+  <div class="panel-body" markdown="1">
+
+This is the one that always trips people up - but if you can do this, it means you really know what's going on.  
+
+Write a deaf grandma simulator.  If you type something in normally, she can't hear you.  If you TYPE IN ALL CAPS, she should respond with something silly and old-people-ish.  If you want to stop talking with grandma, you should type "GOODBYE".
+
+If you get that working and are looking for an extra challenge, make it so you have to say "GOODBYE" 3 times in a row before the program exits.  The first 2 times, she should pretend not to hear you.
+
+</div>

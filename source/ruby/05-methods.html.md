@@ -131,6 +131,18 @@ aAbBcCdDeE
 
 Pretty standard stuff. As you can see from the line  puts ' a'.capitalize, the method capitalize only capitalizes the first character, not the first letter. Also, as we have seen before, throughout all of these method calls, letters remains unchanged. I don't mean to belabor the point, but it's important to understand. There are some methods which do change the associated object, but we haven't seen any yet, and we won't for some time.
 
+
+<div class="panel panel-primary">
+<div class="panel-heading">Before you continue, show this to one of the adult-y people</div>
+  <div class="panel-body" markdown="1">
+
+Write an angry boss simulator program.  It should rudely ask you what you want.  Whatever you say, the angry boss should yell it back at you, and then fire you.  For example, if you type in "I want a raise", it should respond with something like "WHAT DO YOU MEAN 'I WANT A RAISE'???  YOU'RE FIRED!!!"
+
+</div>
+</div>
+
+## Aligning Text
+
 The last of the fancy string methods we'll look at are for visual formatting. The first one, center, adds spaces to the beginning and end of the string to make it centered. However, just like you have to tell puts what you want it to print, and + what you want it to add, you have to tell center how wide you want your centered string to be. So if I wanted to center the lines of a poem, I would do it like this:
 
 ~~~~ ruby
@@ -278,3 +290,11 @@ puts(rand(100))
 ~~~~
 
 It will do the same thing every time you seed it with the same number. If you want to get different numbers again (like what happens if you never use  srand), then just call srand 0. This seeds it with a really weird number, using (among other things) the current time on your computer, down to the millisecond.
+
+<div class="panel panel-primary">
+<div class="panel-heading">Before you continue, show this to one of the adult-y people</div>
+  <div class="panel-body" markdown="1">
+
+Write a fortune teller program.  Use the `rand` method to fill in a number-related fortune, like the chance you're going to win the lottery this week.  Use the text alignment methods to make it look pretty.
+</div>
+</div>

@@ -1,0 +1,67 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300|Inconsolata:400,700);
+
+body {
+  background-image: url('../img/concrete_seamless.png');
+  margin: 1em;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2, h3 {
+  font-weight: 300;
+}
+
+table.table > tbody > tr > td {
+  vertical-align: middle;
+}
+
+table.toc {
+  td.number {
+    font-size: 4rem;
+  }
+
+  td.icon {
+    font-size: 3rem;
+  }
+
+  td.title {
+    font-weight: bold;
+    font-size: 2.4rem;
+  }
+}
+
+table.nav {
+  border: none;
+  tbody tr {
+    td {
+      border: none;
+      width: 33%;
+      padding: 0px;
+      &:nth-child(2) {
+        text-align: center;
+      }
+
+      &:nth-child(3) {
+        text-align: right;
+      }
+    }
+  }
+}
+
+pre {
+  background: none;
+  padding: 0;
+  font-family: 'Inconsolata', monospace;
+}
+
+code.language-text span {
+  color: #e6e1dc !important;
+  font-style: normal !important;
+}
+
+img {
+  max-width: 100%;
+}

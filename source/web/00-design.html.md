@@ -11,9 +11,11 @@ Before you do anything, you need some ideas. What should your website actually d
 
 To begin with, you'll need to answer these questions:
 
-- What is your website about? Do you like dogs, New York, or Pacman?
-- What information are you presenting on the subject? Type up a title and 2-3 short paragraphs, and think of an image you'd like to show on your page.
+- What is your website about? Do you like dogs, New York, or Pacman?  Or maybe you want to make a site all about you, your family, or your favorite workshop instructor!
+- What information are you presenting on the subject? Think up a title and start thinking about what kinds of information you want to share and an image you'd like to show on your page.
 - What does your website look like, in simple high-level terms. What's the background color? What kind of font is appropriate: formal, cartoony, bold and loud, subtle?
+
+Start a Google document as a place to keep track of your design ideas & information.
 
 
 ## Choosing your Assets
@@ -21,7 +23,7 @@ At this point, it's good to start putting together the content & assets that wil
 
 ### Images
 
-To choose an image, go to [Google Images](https://www.google.com/imghp?gws_rd=ssl) and search for something that goes with your topic.
+If you already have a picture you want to use, that's great!  Make sure it's somewhere you can get to.  Otherwise, go to [Google Images](https://www.google.com/imghp?gws_rd=ssl) and search for something that goes with your topic.
 
 - When you find the image you want, click on the image.
 - Press the View image button.
@@ -38,7 +40,7 @@ Head over to [paletton.com](http://paletton.com/) to pick out a color scheme.  P
 You'll probably want to pick a font or 2 for your page to use.   Keep in mind the tone & design of your page - if you're writing a very serious business-y page, a goofy-looking handwriting font is probably not the best choice.  You will want to stick to either using 1 font for everything or picking 1 to use for the headers & another for the rest of your text.  To choose a font:
 
 - Go to [Google Fonts](http://google.com/fonts)
-- You can also use the controls on the left to filter the list.
+- You can use the controls on the left to filter the list.
 - When you find one you like, click the "Add to Collection" button.
 - If you've picked out several fonts, use the "Review" button at the bottom to narrow it down to 1 or 2.
 - Once you have your fonts chosen, click the "Use" button in the panel at the bottom of the page.
@@ -54,7 +56,7 @@ Next, get a pen and paper and sketch out roughly how you want your site to look.
 <div class="panel-heading">Before you continue, show this to one of the adult-y people</div>
   <div class="panel-body" markdown="1">
 
-Show us your:
+Show us your Google document with:
 
 - 2-3 paragraphs of information for your page
 - 1-3 colors & what you're using them for

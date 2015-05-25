@@ -211,3 +211,11 @@ Add a link to your page now, if you haven't already done so.
 If you have followed all the instructions so far, you should end up with a page that looks like this:
 
 ![Product so far](/img/finished-test-page-small.png)
+
+<div class="panel panel-primary">
+<div class="panel-heading">Before you continue, show this to one of the adult-y people</div>
+  <div class="panel-body" markdown="1">
+
+Show us your page with a heading, image, paragraphs of text, and a list.
+
+</div>

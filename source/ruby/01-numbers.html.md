@@ -7,23 +7,23 @@ desc: "Getting Ruby to do your math homework"
 ---
 # Numbers
 
-Now that you're ready to go, let's write a program! Open gedit and type in the following:
+Now that you're ready to go, let's start programming! Open a new file in Notepad++ and type in the following:
 
 ~~~~ ruby
 puts 1 + 2
 ~~~~
 
-Save your program (yes, that's a program!) as **calc.rb** (the .rb is what we usually put at the end of programs written in Ruby). Now run your program by typing
+Save your program as `calc.rb` (the `.rb` is what we usually put at the end of programs written in Ruby). Now run your program by typing
 
 ~~~~ bash
 ruby calc.rb
 ~~~~
 
-into your command line. It should have put a 3 on your screen. See, programming isn't so hard, now is it?
+into your command line. It should have put a `3` on your screen. See, programming isn't so hard, now is it?
 
 ## Introduction to puts
 
-So what's going on in that program? I'm sure you can guess what the  1+2 does; our program is basically the same as:
+So what's going on in that program? I'm sure you can guess what the `1+2` does; our program is basically the same as:
 
 ~~~~ ruby
 puts 3
@@ -57,7 +57,7 @@ In practice, most programs don't use floats; only integers. (After all, no one w
 
 ## Simple Arithmetic
 
-So far, we've got all the makings of a simple calculator. (Calculators always use floats, so if you want your computer to act just like a calculator, you should also use floats.) For addition and subtraction, we use + and -, as we saw. For multiplication, we use \*, and for division we use /. Most keyboards have these keys in the numeric keypad on the far right side. If you have a smaller keyboard or a laptop, though, you can just use Shift 8 and / (same key as the ? key). Let's try to expand our calc.rb program a little. Type in the following and then run it.
+So far, we've got all the makings of a simple calculator. (Calculators always use floats, so if you want your computer to act just like a calculator, you should also use floats.) For addition and subtraction, we use `+` and `-`, as we saw. For multiplication, we use `\*`, and for division we use `/`. Most keyboards have these keys in the numeric keypad on the far right side. Let's try to expand our calc.rb program a little. Type in the following and then run it.
 
 ~~~~ ruby
 puts 1.0 + 2.0

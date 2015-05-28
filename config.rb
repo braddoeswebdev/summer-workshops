@@ -70,11 +70,12 @@ configure :build do
   # Enable cache buster
   # activate :asset_hash
 
+  set :relative_links, true
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
-  # set :http_prefix, "/Content/images/"
+  #set :http_prefix, "/~summerrobots/"
 end
 
 set :markdown_engine, :kramdown

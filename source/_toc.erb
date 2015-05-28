@@ -1,5 +1,5 @@
 <table class="table table-striped toc">
-<% sitemap.find_resource_by_path(url).children.each do |p| %>
+<% sitemap.find_resource_by_path(url).children.sort{|a,b| a.data['number'] <=> b.data['number']}.each do |p| %>
 <tr>
   <td class="number"><%= link_to p.data['number'], p.url %></td>
   <td class="icon"><%= link_to i(p.data['icon']), p.url %> </td>
@@ -14,7 +14,7 @@
     <td>
 
       </td>
-    <td><%= link_to "Back to Lesson Index " + i('angle-double-up'), '/' %></td>
+    <td><%= link_to "Back to Lesson Index " + i('angle-double-up'), '/index.html' %></td>
     <td>
 
     </td>

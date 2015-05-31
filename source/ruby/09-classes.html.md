@@ -7,7 +7,7 @@ desc: "More kinds of objects for your programs"
 ---
 # Classes
 
-So far we've seen several different kinds, or classes, of objects: strings, integers, floats, arrays, and a few special objects (true, false, and nil) which we'll talk about later. In Ruby, these classes are always capitalized:  String,  Integer, Float, Array... etc. In general, if we want to create a new object of a certain class, we use new:
+So far we've seen several different kinds, or classes, of objects: strings, integers, floats, arrays, and a few special objects (`true`, `false`, and `nil`) which we'll talk about later. In Ruby, these classes are always capitalized:  String,  Integer, Float, Array... etc. In general, if we want to create a new object of a certain class, we use new:
 
 ~~~~ ruby
 a = Array.new  + [12345]  # Array  addition.
@@ -25,11 +25,11 @@ b = hello
 c = 2014-09-29 13:51:46 -0700
 ~~~~
 
-Because we can create arrays and strings using  [...] and '...' respectively, we rarely create them using new. (Though it's not really obvious from the above example, String.new creates an empty string, and Array.new creates an empty array.) Also, numbers are special exceptions: you can't create an integer with Integer.new. You just have to write the integer.
+Because we can create arrays and strings using  `[...]` and `'...'` respectively, we rarely create them using `new`. (Though it's not really obvious from the above example, `String.new` creates an empty string, and `Array.new` creates an empty array.) Also, numbers are special exceptions: you can't create an integer with `Integer.new`. You just have to write the integer.
 
 ## The Time Class
 
-So what's the story with this Time class?  Time objects represent moments in time. You can add (or subtract) numbers to (or from) times to get new times: adding 1.5 to a time makes a new time one-and-a-half seconds later:
+So what's the story with this `Time` class?  Time objects represent moments in time. You can add (or subtract) numbers to (or from) times to get new times: adding 1.5 to a time makes a new time one-and-a-half seconds later:
 
 ~~~~ ruby
 time  = Time.new   # The moment I generated this web page.
@@ -44,7 +44,7 @@ puts time2
 2014-09-29 13:52:46 -0700
 ~~~~
 
-You can also make a time for a specific moment using  Time.mktime:
+You can also make a time for a specific moment using  `Time.mktime`:
 
 ~~~~ ruby
 puts Time.mktime(2000, 1, 1)          # Y2K.
@@ -56,7 +56,7 @@ puts Time.mktime(1976, 8, 3, 10, 11)  # When I was born.
 1976-08-03 10:11:00 -0700
 ~~~~
 
-Notice: that's when I was born in Pacific Daylight Savings Time (PDT). When Y2K struck, though, it was Pacific Standard Time (PST), at least to us West Coasters. The parentheses are to group the parameters to mktime together. The more parameters you add, the more accurate your time becomes.
+Notice: that's when I was born in Pacific Daylight Savings Time (PDT). When Y2K struck, though, it was Pacific Standard Time (PST), at least to us West Coasters. The parentheses are to group the parameters to `mktime` together. The more parameters you add, the more accurate your time becomes.
 
 You can compare times using the comparison methods (an earlier time is less than a later time), and if you subtract one time from another, you'll get the number of seconds between them. Play around with it!
 
@@ -64,7 +64,7 @@ You can compare times using the comparison methods (an earlier time is less than
 <div class="panel-heading">Before you continue, show this to one of the adult-y people</div>
   <div class="panel-body" markdown="1">
 
-Write a program that asks what year, month, and day you were born, then figure out how old you are in days.
+Write a program that asks what year, month, and day you were born, then figure out many days old you are.
 
 </div>
 </div>
@@ -101,7 +101,7 @@ numbers:  green
 keywords:  blue
 ~~~~
 
-If I use an array, I have to remember that slot 0 is for strings, slot 1 is for numbers, etc. But if I use a hash, it's easy! Slot 'strings' holds the color of the strings, of course. Nothing to remember. You might have noticed that when we used  each, the objects in the hash didn't come out in the same order we put them in. Arrays are for keeping things in order, not hashes.
+If I use an array, I have to remember that slot 0 is for strings, slot 1 is for numbers, etc. But if I use a hash, it's easy! Slot 'strings' holds the color of the strings, of course. Nothing to remember. You might have noticed that when we used  `each`, the objects in the hash didn't come out in the same order we put them in. Arrays are for keeping things in order, not hashes.
 
 Though people usually use strings to name the slots in a hash, you could use any kind of object, even arrays and other hashes (though I can't think of why you would want to do this...):
 
@@ -121,12 +121,14 @@ Hashes and arrays are good for different things; it's up to you to decide which 
 
 Use a hash to make a list of a few teachers & what room they're in, then print it out nicely.
 
+(If you don't have room numbers memorized, just make some up)
+
 </div>
 </div>
 
 ## Creating Classes
 
-We've seen a number of different classes of objects. However, it's easy to come up with kinds of objects that Ruby doesn't have. Luckily, creating a new class is as easy as extending an old one. Let's say we wanted to make some dice in Ruby. Here's how we could make the Die class:
+We've seen a number of different classes of objects. However, it's easy to come up with kinds of objects that Ruby doesn't have. Luckily, creating a new class is pretty easy. Let's say we wanted to make some dice in Ruby. Here's how we could make the Die class:
 
 ~~~~ ruby
 class Die
@@ -155,13 +157,13 @@ And that's it! Objects of our very own.
 
 We can define all sorts of methods for our objects... but there's something missing. Working with these objects feels a lot like programming before we learned about variables. Look at our dice, for example. We can roll them, and each time we do they give us a different number. But if we wanted to hang on to that number, we would have to create a variable to point to the number. It seems like any decent die should be able to have a number, and that rolling the die should change the number. If we keep track of the die, we shouldn't also have to keep track of the number it is showing.
 
-However, if we try to store the number we rolled in a (local) variable in roll, it will be gone as soon as  roll is finished. We need to store the number in a different kind of variable:
+However, if we try to store the number we rolled in a (local) variable in `roll`, it will be gone as soon as  `roll` is finished. We need to store the number in a different kind of variable:
 
 ## Instance Variables
 
 Normally when we want to talk about a string, we will just call it a string. However, we could also call it a string object. Sometimes programmers might call it an instance of the class String, but this is just a fancy (and rather long-winded) way of saying string. An instance of a class is just an object of that class.
 
-So instance variables are just an object's variables. A method's local variables last until the method is finished. An object's instance variables, on the other hand, will last as long as the object does. To tell instance variables from local variables, they have @ in front of their names:
+So instance variables are just an object's variables. A method's local variables last until the method is finished. An object's instance variables, on the other hand, will last as long as the object does. To tell instance variables from local variables, they have `@` in front of their names:
 
 ~~~~ ruby
 class Die
@@ -192,7 +194,7 @@ puts die.showing
 4
 ~~~~
 
-Very nice! So roll rolls the die and  showing tells us which number is showing. However, what if we try to look at what's showing before we've rolled the die (before we've set @numberShowing)?
+Very nice! So `roll` rolls the die and  `showing` tells us which number is showing. However, what if we try to look at what's showing before we've rolled the die (before we've set @numberShowing)?
 
 ~~~~ ruby
 class Die
@@ -216,7 +218,7 @@ puts Die.new.showing
 
 ~~~~
 
-Hmmm... well, at least it didn't give us an error. Still, it doesn't really make sense for a die to be "unrolled", or whatever nil is supposed to mean here. It would be nice if we could set up our new die object right when it's created. That's what initialize is for:
+Hmmm... well, at least it didn't give us an error. Still, it doesn't really make sense for a die to be "unrolled", or whatever `nil` is supposed to mean here. It would be nice if we could set up our new die object right when it's created. That's what `initialize` is for:
 
 ~~~~ ruby
 class Die
@@ -245,15 +247,15 @@ puts Die.new.showing
 3
 ~~~~
 
-When an object is created, its initialize method (if it has one defined) is always called.
+When an object is created, its `initialize` method (if it has one defined) is always called.
 
-Our dice are just about perfect. The only thing that might be missing is a way to set which side of a die is showing... why don't you write a cheat method which does just that! Come back when you're done (and when you tested that it worked, of course). Make sure that someone can't set the die to have a  7 showing!
+Our dice are just about perfect. The only thing that might be missing is a way to set which side of a die is showing... why don't you write a `cheat` method which does just that! Come back when you're done (and when you tested that it worked, of course). Make sure that someone can't set the die to have a  `7` showing!
 
 <div class="panel panel-primary">
 <div class="panel-heading">Before you continue, show this to one of the adult-y people</div>
   <div class="panel-body" markdown="1">
 
-Create a person class that keeps track of a name and a birthday.  Give it name and age methods that just return their name & age (in seconds).  Then write a program that makes 2 people & tells you which one is older & by how much.
+Flesh out your Die class.  First, add a `cheat` method.  Then change some things around so that we can make dice with any number of sides that we want.  Make your `initialize` method take an argument for the number of sides it has, and then change the `roll` and `cheat` methods to match.
 
 </div>
 </div>

@@ -135,7 +135,7 @@ honestly.  Thanks again.
 false
 ~~~~
 
-That was a pretty long program, with lots of repetition. (All of the sections of code around the questions about Mexican food were identical, and the bed-wetting question was only slightly different.) Repetition is a bad thing. Still, we can't make it into a big loop or iterator, because sometimes we have things we want to do between questions. In situations like these, it's best to write a method. Here's how:
+That was a pretty long program, with lots of repetition. (All of the sections of code around the questions about Mexican food were identical, and the bed-wetting question was only slightly different.) As we learned in the last section, repetition is a bad thing. Still, we can't make it into a big loop or iterator, because sometimes we have things we want to do between questions. In situations like these, it's best to write a method.  The `def` keyword is used to start a new method. Here's how to use it:
 
 ~~~~ ruby
 def sayMoo
@@ -147,7 +147,7 @@ end
 
 ~~~~
 
-Uh... our program didn't sayMoo. Why not? Because we didn't tell it to. We told it how to sayMoo, but we never actually said to do it. Let's give it another shot:
+Uh... our program didn't `sayMoo`. Why not? Because we didn't tell it to. We told it how to `sayMoo`, but we never actually said to do it. Let's give it another shot:
 
 ~~~~ ruby
 def sayMoo
@@ -171,17 +171,17 @@ mooooooo...
 
 Ahhh, much better. (Just in case you don't speak French, that was a French duck in the middle of the program. In France, ducks say "coin-coin".)
 
-So we defined the method sayMoo. (Method names, like variable names, start with a lowercase letter. There are a few exceptions, though, like + or ==.) But don't methods always have to be associated with objects? Well, yes they do, and in this case (as with  puts and gets), the method is just associated with the object representing the whole program. In the next chapter we'll see how to add methods to other objects. But first...
+So we defined the method `sayMoo`. (Method names, like variable names, start with a lowercase letter. There are a few exceptions, though, like + or ==.) But don't methods always have to be associated with objects? Well, yes they do, and in this case (as with  `puts` and `gets`), the method is just associated with the object representing the whole program. In the next chapter we'll see how to add methods to other objects. But first...
 
 ## Method Parameters
 
-You may have noticed that some methods (like  gets, to_s, reverse...) you can just call on an object. However, other methods (like +, -, puts...) take parameters to tell the object how to do the method. For example, you wouldn't just say  5+, right? You're telling 5 to add, but you aren't telling it what to add.
+You may have noticed that some methods (like  `gets`, `to_s`, `reverse`...) you can just call on an object. However, other methods (like `+`, `-`, `puts`...) take parameters to tell the object how to do the method. For example, you wouldn't just say  `5+`, right? You're telling 5 to add, but you aren't telling it what to add.
 
-To add a parameter to sayMoo (let's say, the number of moos), we would do this:
+To add a parameter to `sayMoo` (let's say, the number of moos), we would do this:
 
 ~~~~ ruby
 def sayMoo numberOfMoos
-  puts 'mooooooo...'*numberOfMoos
+  puts 'mooooooo...' * numberOfMoos
 end
 
 sayMoo 3
@@ -195,11 +195,11 @@ oink-oink
 #<ArgumentError: wrong number of arguments (0 for 1)>
 ~~~~
 
-numberOfMoos is a variable which points to the parameter passed in. I'll say that again, but it's a little confusing:  numberOfMoos is a variable which points to the parameter passed in. So if I type in  sayMoo 3, then the parameter is 3, and the variable numberOfMoos points to 3.
+`numberOfMoos` is a variable which points to the parameter passed in. I'll say that again, but it's a little confusing:  `numberOfMoos` is a variable which points to the parameter passed in. So if I type in  `sayMoo 3`, then the parameter is `3`, and the variable `numberOfMoos` points to `3`.
 
-As you can see, the parameter is now required. After all, what is sayMoo supposed to multiply  'mooooooo...' by if you don't give it a parameter? Your poor computer has no idea.
+As you can see, the parameter is now required. After all, what is `sayMoo` supposed to multiply  `'mooooooo...'` by if you don't give it a parameter? Your poor computer has no idea.
 
-If objects in Ruby are like nouns in English, and methods are like verbs, then you can think of parameters as adverbs (like with sayMoo, where the parameter told us how to sayMoo) or sometimes as direct objects (like with puts, where the parameter is what gets putsed).
+If objects in Ruby are like nouns in English, and methods are like verbs, then you can think of parameters as adverbs (like with `sayMoo`, where the parameter told us how to sayMoo) or sometimes as direct objects (like with `puts`, where the parameter is what gets putsed).
 
 ## Local Variables
 
@@ -218,7 +218,7 @@ doubleThis 44
 44 doubled is 88
 ~~~~
 
-The variables are num and numTimes2. They both sit inside the method doubleThis. These (and all of the variables you have seen so far) are local variables. This means that they live inside the method, and they cannot leave. If you try, you will get an error:
+The variables are `num` and `numTimes2`. They both sit inside the method `doubleThis`. These (and all of the variables you have seen so far) are local variables. This means that they live inside the method, and they cannot leave. If you try, you will get an error:
 
 ~~~~ ruby
 def doubleThis num
@@ -255,15 +255,15 @@ HAHA!  I ruined your variable!
 You can't even touch my variable!
 ~~~~
 
-There are actually two variables in that little program named var: one inside littlePest, and one outside of it. When we called littlePest var, we really just passed the string from one var to the other, so that both were pointing to the same string. Then littlePest pointed its own local  var to 0, but that did nothing to the  var outside the method.
+There are actually two variables in that little program named `var`: one inside `littlePest`, and one outside of it. When we called `littlePest var`, we really just passed the string from one `var` to the other, so that both were pointing to the same string. Then `littlePest` pointed its own local  `var` to 0, but that did nothing to the  `var` outside the method.
 
 ## Return Values
 
-You may have noticed that some methods give you something back when you call them. For example, gets returns a string (the string you typed in), and the + method in 5+3, (which is really 5.+(3)) returns 8. The arithmetic methods for numbers return numbers, and the arithmetic methods for strings return strings.
+You may have noticed that some methods give you something back when you call them. For example, `gets` returns a string (the string you typed in), and the `+` method in `5+3`, (which is really `5.+(3)`) returns `8`. The arithmetic methods for numbers return numbers, and the arithmetic methods for strings return strings.
 
-It's important to understand the difference between methods returning a value to where the method was called, and your program outputting information to your screen, like  puts does. Notice that 5+3 returns  8; it does not output  8.
+It's important to understand the difference between methods returning a value to where the method was called, and your program outputting information to your screen, like  `puts` does. Notice that `5+3` returns  `8`; it does not output  `8`.
 
-So what does puts return? We never cared before, but let's look at it now:
+So what does `puts` return? We never cared before, but let's look at it now:
 
 ~~~~ ruby
 returnVal = puts 'This puts returned:'
@@ -274,11 +274,11 @@ puts returnVal
 This puts returned:
 ~~~~
 
-The first puts didn't seem to return anything, and in a way it didn't; it returned nil.  Sometimes,you can ask the computer for something and the answer is nothing. How do we talk about... nothing?  The answer is nil: Ruby's way of saying "nothing".  nil is a special object which basically means "not any other object." And when you  puts nil, it prints out nothing. (Just a new line.) Though we didn't test it, the second puts did, too;  puts always returns nil. Every method has to return something, even if it's just nil.
+The first `puts` didn't seem to return anything, and in a way it didn't; it returned `nil`.  Sometimes,you can ask the computer for something and the answer is nothing. How do we talk about... nothing?  The answer is `nil`: Ruby's way of saying "nothing".  `nil` is a special object which basically means "not any other object." And when you `puts nil`, it prints out nothing. (Just a new line.) Though we didn't test it, the second `puts` did, too;  `puts` always returns `nil`. Every method has to return something, even if it's just `nil`.
 
-Take a quick break and write a program to find out what sayMoo returned.
+Take a quick break and write a program to find out what `sayMoo` returned.
 
-Were you surprised? Well, here's how it works: the value returned from a method is simply the last line of the method. In the case of sayMoo, this means it returns puts 'mooooooo...'\*numberOfMoos, which is just  nil since puts always returns  nil. If we wanted all of our methods to return the string 'yellow submarine', we would just need to put that at the end of them:
+Were you surprised? Well, here's how it works: the value returned from a method is simply the last line of the method. In the case of `sayMoo`, this means it returns `puts 'mooooooo...' * numberOfMoos`, which is just  `nil` since `puts` always returns  `nil`. If we wanted all of our methods to return the string `'yellow submarine'`, we would just need to put that at the end of them:
 
 ~~~~ ruby
 def sayMoo numberOfMoos

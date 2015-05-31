@@ -57,7 +57,7 @@ In practice, most programs don't use floats; only integers. (After all, no one w
 
 ## Simple Arithmetic
 
-So far, we've got all the makings of a simple calculator. (Calculators always use floats, so if you want your computer to act just like a calculator, you should also use floats.) For addition and subtraction, we use `+` and `-`, as we saw. For multiplication, we use `\*`, and for division we use `/`. Most keyboards have these keys in the numeric keypad on the far right side. Let's try to expand our calc.rb program a little. Type in the following and then run it.
+So far, we've got all the makings of a simple calculator. (Calculators always use floats, so if you want your computer to act just like a calculator, you should also use floats.) For addition and subtraction, we use `+` and `-`, as we saw. For multiplication, we use `*`, and for division we use `/`. Most keyboards have these keys in the numeric keypad on the far right side. Let's try to expand our calc.rb program a little. Type in the following and then run it.
 
 ~~~~ ruby
 puts 1.0 + 2.0

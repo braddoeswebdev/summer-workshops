@@ -52,7 +52,7 @@ puts var1 + var2.to_i
 7
 ~~~~
 
-Notice that, even after we got the string version of  `var1` by calling `to_s`, `var1` was always pointing at `2`, and never at `'2'`. Unless we explicitly reassign  `var1` (which requires an = sign), it will point at `2` for the life of the program.
+Notice that, even after we got the string version of  `var1` by calling `to_s`, `var1` was always pointing at `2`, and never at `'2'`. Unless we explicitly reassign  `var1` (which requires an = sign), it will always be pointing at `2`.
 
 Now let's try some more interesting (and a few just weird) conversions:
 

@@ -74,7 +74,7 @@ puts 'blink ' * 4
 blink blink blink blink
 ~~~~
 
-If you think about it, this makes perfect sense. After all,  `7\*3` really just means `7+7+7`, so `'moo'\*3` just means `'moo'+'moo'+'moo'`.
+If you think about it, this makes perfect sense. After all,  `7*3` really just means `7+7+7`, so `'moo'*3` just means `'moo'+'moo'+'moo'`.
 
 # 12 vs '12'
 
@@ -130,7 +130,7 @@ puts 'Betty' + 12
 puts 'Fred' * 'John'
 ~~~~
 
-Something else to be aware of: you can write `'pig'\*5` in a program, since it just means 5 sets of the string `'pig'` all added together. However, you can't write `5\*'pig'`, since that means `'pig'` sets of the number 5, which is just silly.
+Something else to be aware of: you can write `'pig'*5` in a program, since it just means 5 sets of the string `'pig'` all added together. However, you can't write `5*'pig'`, since that means `'pig'` sets of the number 5, which is just silly.
 
 Finally, what if I want a program to print out  `You're swell`!? We can try this:
 

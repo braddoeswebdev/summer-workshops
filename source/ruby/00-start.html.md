@@ -31,11 +31,11 @@ Let's start with Notepad++.  Notepad++ works kind of like regular Notepad: it ju
 puts "Hello, world!"
 ~~~~
 
-Once you've typed that in, go ahead and save your file to your Y drive.  Make sure you name it something simple, with no spaces or symbols, and with a `.rb` at the end.  `hello.rb` would be a good choice.  Once you save it, things should change colors & look kind of like it does here.
+Once you've typed that in, go ahead and save your file to your desktop.  Make sure you name it something simple, with no spaces or symbols, and with a `.rb` at the end.  `hello.rb` would be a good choice.  Once you save it, things should change colors & look kind of like it does here.
 
 ## Running a Program
 
-Flip over to the Ruby Shell.  First, we have to tell it to go to your Y drive to find your files: to do that, type `cd /y`.  Once you're there, it's easy to run your program.  Just type `ruby`, a space, and the name of your program that you saved on your Y drive, then hit enter to start it.  So if you followed my advice and called your program `hello.rb`, you'd type `ruby hello.rb`.  It should print "Hello, world!" on the screen and then let you type something else in.
+Flip over to the Ruby Shell.  First, we have to tell it to go to your desktop to find your files: to do that, type `cd /c/Users/[username]/Desktop`, replacing *[username]* with your username.  Once you're there, it's easy to run your program.  Just type `ruby`, a space, and the name of your program that you saved on your Y drive, then hit enter to start it.  So if you followed my advice and called your program `hello.rb`, you'd type `ruby hello.rb`.  It should print "Hello, world!" on the screen and then let you type something else in.
 
 Here's a handy little trick: let's say we wanted the computer to tell us hello again.  You could sit there and type `ruby hello.rb` in again... or you could just push the up key.  Pushing the up & down keys scroll through the commands you've already ran.
 

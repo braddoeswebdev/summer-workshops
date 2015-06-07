@@ -50,24 +50,22 @@ There are 2 **functions** defined here: `setup` and `loop`.  The lines beginnnin
 * `digitalWrite(pin, value)`: tells a pin to turn on (`HIGH`) or off (`LOW`).
 * `delay(ms)`: tells the Teensy to wait for the specified number of miliseconds before continuing.
 
-And here's the code:
+No copying & pasting - type this in yourself!  Here's the code:
 
 ~~~~
 void setup() {
-  // initialize the digital pin as an output.
   pinMode(13, OUTPUT);
 }
 
-// the loop routine runs over and over again forever:
 void loop() {
-  digitalWrite(13, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);               // wait for a second
-  digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);               // wait for a second
+  digitalWrite(13, HIGH);  
+  delay(1000);
+  digitalWrite(13, LOW);
+  delay(1000);
 }
 ~~~~
 
-Our `setup` function just tells the Teensy to use pin 13 for output.  The `loop` function tells it to turn pin 13 on, wait a second, turn it off, and wait a second - then the `loop` function starts again, turns pin 13 on, waits a second... on and on until we unplug it.  Save your code somewhere, then hit the checkmark button in the upper-left to make sure your code is OK, then hit the arrow button to push your code to your Teensy.
+Our `setup` function just tells the Teensy to use pin 13 for output.  The `loop` function tells it to turn pin 13 on, wait a second, turn it off, and wait a second - then the `loop` function starts again, turns pin 13 on, waits a second... on and on until we unplug it.  Make sure you have the semicolons - the `;`s at the end of the lines that need them! Save your code somewhere, then hit the checkmark button in the upper-left to make sure your code is OK, and then hit the arrow button to push your code to your Teensy.
 
 <div class="panel panel-primary">
 <div class="panel-heading">Before you continue, show this to one of the adult-y people</div>
@@ -111,7 +109,7 @@ Anyway, how do we fix this?  Basically, we need a way to connect the pin to grou
 
 ## Back to the Code...
 
-So now that we see that the code works, let's look at it in a little more detail.  There are 4 new things in the last program - `if` and it's friend `else`, `digitalRead`, and `==`.  The `digitalRead` function is just the opposite of `digitalWrite`: it returns whether a pin is connected to power (`HIGH`) or ground (`LOW`).  The `==` lets us compare things - in this case, whether or not the value on pin 12 is `HIGH`.  `if` lets us make decisions inside the code, so the program only does certain things if a condition is true.  `else` lets us say what happens when that condition is false.  Note that an `else` has to come with an `if`.
+So now that we see that the code works, let's look at it in a little more detail.  There are 4 new things in the last program - `if` and it's friend `else`, `digitalRead`, and `==`.  The `digitalRead` function is just the opposite of `digitalWrite`: it returns whether a pin is connected to power (`HIGH`) or ground (`LOW`).  The `==` lets us compare things - in this case, whether or not the value on pin 12 is `HIGH`.  `if` lets us make decisions inside the code, so the program only does certain things (enclosed in {}'s) if a condition is true.  `else` lets us say what happens when that condition is false (again, in another set of {}'s).  Note that an `else` has to come with an `if`.
 
 
 <div class="panel panel-primary">

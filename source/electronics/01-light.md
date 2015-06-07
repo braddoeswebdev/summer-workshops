@@ -21,8 +21,9 @@ Let's make this a little more interesting.  Let's add a button that controls whe
 
 ![Button LED Setup](/img/03-button-light.png)
 
-These pushbuttons are what we call a **normally open switch**, meaning that when the button isn't pushed, the circuit isn't closed, so no current will flow.  When the button is pushed, it connects all the pins together so current can flow.  
+These pushbuttons are a little weird - the pins that are across from each other are always connected, whether the button is pushed or not.  When you push the button, it connects all the pins together.  Most of the time, we'll connect things through a button like we did in this example - diagonally across from each other.
 
+![Button Diagram](/img/button.png)
 
 <div class="panel panel-primary">
 <div class="panel-heading">Before you continue, show this to one of the adult-y people</div>

@@ -34,7 +34,7 @@ You can disconnect & reconnect the ground wires to change the color.
 <div class="panel-heading">Before you continue, show this to one of the adult-y people</div>
   <div class="panel-body" markdown="1">
 
-Use your 3 buttons to turn each individual color in your RGB LED on and off.
+Build a circuit that uses your 3 buttons to turn each individual color in your RGB LED on and off.
 
 </div>
 </div>
@@ -48,3 +48,12 @@ Your kit also comes with a 7-segment numeric display for displaying a number.  I
 Experiment to see which connection controls which segment.  Or, you know, just look at this handy reference diagram:
 
 ![7-seg LED Diagram](/img/7-seg.png)
+
+<div class="panel panel-primary">
+<div class="panel-heading">Before you continue, show this to one of the adult-y people</div>
+  <div class="panel-body" markdown="1">
+
+Make your 7-segment display display a 1, then add a button that makes it display a 4 instead.
+
+</div>
+</div>

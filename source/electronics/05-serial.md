@@ -2,7 +2,7 @@
 series: 'electronics'
 number: 5
 title: "Serial Communication"
-icon: 'lightbulb-o'
+icon: 'arrows-h'
 desc: "Send information to your Teensy and get information back"
 ---
 # Serial Communication

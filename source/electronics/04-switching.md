@@ -2,7 +2,7 @@
 series: 'electronics'
 number: 4
 title: "Building a Light Switch"
-icon: 'lightbulb-o'
+icon: 'refresh'
 desc: "Learning more basic programming concepts in order to turn your light on and off... again"
 ---
 # Building a Light Switch

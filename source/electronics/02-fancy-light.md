@@ -2,7 +2,7 @@
 series: 'electronics'
 number: 2
 title: "Fancy Lights"
-icon: 'lightbulb-o'
+icon: 'sliders'
 desc: "Using your RGB LED & the 7-segment display"
 ---
 # Fancy Lights

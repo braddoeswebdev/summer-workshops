@@ -2,7 +2,7 @@
 series: 'electronics'
 number: 3
 title: "Blinking Lights"
-icon: 'lightbulb-o'
+icon: 'flash'
 desc: "Let's write some code to control a light!"
 ---
 # Blinking Light

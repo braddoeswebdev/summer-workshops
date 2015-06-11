@@ -7,7 +7,7 @@ desc: "Learning more basic programming concepts in order to turn your light on a
 ---
 # Building a Light Switch
 
-Right now, your light is on while your button is pressed down, and goes off while the button isn't pressed.  Let's make this a little more useful - when you push the button, the light switches on or off (i.e. off - *push button* - on - *push button* - off).  Change your circuit from the last lesson around a little bit:
+Right now, your light is on while your button is pressed down, and goes off while the button isn't pressed.  Let's make this a little more useful - when you push the button, the light switches on or off (i.e. off - *push button* - on - *push button* - off).  Change your circuit from the last lesson around a little bit (once again, **the LED is backwards**):
 
 ![Switch circuit](/img/10-switch.png)
 
@@ -38,7 +38,7 @@ void loop() {
 }
 ~~~~
 
-The first line creates a new variable called `light` and puts `HIGH` in it.  The `int` at the beginning of the line tells the Teensy what kind of data this box will hold - in this case, an integer, or whole number.  Because we made it outside the `setup` and `loop` functions, we can use it inside both of them.  If we made it inside one of the functions, it would only be accessible inside that function - and if we made it inside `loop`, we'd get a new box each time it ran - not all that useful, most of the time.
+The first line creates a new variable called `light` and puts `HIGH` in it.  The `int` at the beginning of the line tells the Teensy what kind of data this box will hold - in this case, an integer, or whole number (`HIGH` itself is a variable pointing to a number, FYI).  Because we made it outside the `setup` and `loop` functions, we can use it inside both of them.  If we made it inside one of the functions, it would only be accessible inside that function - and if we made it inside `loop`, we'd get a new box each time it ran - not all that useful, most of the time.
 
 If you look further down, you see we use the `light` variable in an `if` statement to determine if the light is already on - if it is, we turn it off, `else` we turn it on.  We use the `light` variable again at the end to actually turn the light on or off.
 

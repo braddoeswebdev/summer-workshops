@@ -42,7 +42,7 @@ We can run multiple LEDs at the same time too.  There are 2 ways to do this: *se
 
 Did you see what happened?  You probably didn't - because nothing visible happened!  Why didn't this work?
 
-I'll tell you why - there's not enough energy!  When you connect things in series, it divides the voltage equally to each component.  Since we have 3.3 volts going out, each LED gets around 1.7 volts. These LEDs need around 2-2.2 volts to glow, so it's enough to light them up.  So how do we get them to light up?  More voltage!  Move the wire you have from the 3V pin on the Teensy to the 5V pin - 5 volts divided by 2 gives us 2.5 volts, which is enough to get the LEDs to light up a little bit.
+I'll tell you why - there's not enough energy!  When you connect things in series, it divides the voltage equally to each component.  Since we have 3.3 volts going out, each LED gets around 1.7 volts. These LEDs need around 2-2.2 volts to glow, so it's not enough to light them up.  So how do we get them to light up?  More voltage!  Move the wire you have from the 3V pin on the Teensy to the 5V pin - 5 volts divided by 2 gives us 2.5 volts, which is enough to get the LEDs to light up a little bit.
 
 ![Better series LED Setup](/img/04a-series.png)
 

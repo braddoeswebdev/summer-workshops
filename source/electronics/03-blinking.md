@@ -78,7 +78,7 @@ Change your program to use a different pin, and make it blink faster.
 
 ## Input Programming
 
-Now let's try to get one of our pushbuttons hooked up to the Teensy & have it control the LED.  Leave your LED hooked up with the negative end connected to the Teensy, and add this stuff to your breadboard:
+Now let's try to get one of our pushbuttons hooked up to the Teensy & have it control the LED.  Leave your LED hooked up with the negative end connected to the Teensy (note that **the diagram has it backwards**), and add this stuff to your breadboard:
 
 ![Teensy + Button](/img/09-button.png)
 
